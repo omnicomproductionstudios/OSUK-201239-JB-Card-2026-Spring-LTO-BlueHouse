@@ -20,12 +20,12 @@ function animate() {
     .addLabel("frame2", "frame1+=4")
     .to(copy2, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame2+=0.3")
     .to(term2, 1, { autoAlpha: 1, ease: "power3.out" }, "frame2")
-    .to(copy2, 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame2+=3.5")
+    .to([copy2, term2], 0.5, { autoAlpha: 0, ease: "power1.inOut" }, "frame2+=3.5")
     .addLabel("frame3", "frame2+=4")
-    .to(copy3, 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame3")
+    .to([copy3, term3], 1, { y: 0, autoAlpha: 1, ease: "power3.out" }, "frame3")
     .addLabel("frame4", "frame3+=4")
     .to(lastFrame, 0.4, { x: 0, ease: Power2.easeOut }, "frame4")
-    .to([copy4, cta, card, term3], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
+    .to([copy4, cta, card], 0.5, { autoAlpha:1, y: 0, ease: Power2.easeOut }, "frame4+=0.5")
     .to(shine, 0.5, { backgroundPosition: '480px 0px' }, "frame4+=1");
 }
 
