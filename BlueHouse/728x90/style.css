@@ -114,7 +114,8 @@ video {
 }
 
 .term{
-  font-family: "ESKlarheitGrotesk Smbd";
+  /* font-family: "ESKlarheitGrotesk Smbd"; */
+  font-family: "ESKlarheitGrotesk Xbd";
   color: #fff;
   width: 100%;
   font-size: 4px;
